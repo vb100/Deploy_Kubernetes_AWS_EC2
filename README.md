@@ -168,5 +168,7 @@ This step must be performed in Master node only. With this step you will create 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
   
-The execution of this command can take approximatelly 2-3 minutes. 
+The execution of this command can take approximatelly 2-3 minutes. At the end, you should get a quite large output with <code>join</code> command at the very end (we will use it in the next step to connect Worker nodes to Master node), and some basic commands in the beginning of output message. I strongly recommend to copy the whole output message for further use.
 </p>
+
+<h3>Make clusters with Master and Worker nodes</h3>
