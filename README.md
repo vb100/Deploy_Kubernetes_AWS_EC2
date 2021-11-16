@@ -4,7 +4,7 @@ Video of steps explained: <a href="https://www.youtube.com/c/VytautasBielinskas"
 
 ---
 
-<h2>prerequisites</h2>
+<h2>Prerequisites</h2>
 <p>To sucessfully complete this tutorial you should: 
 <ul>
   <li>have an active AWS Account.</li>
@@ -13,3 +13,6 @@ Video of steps explained: <a href="https://www.youtube.com/c/VytautasBielinskas"
 </ul>
 If you say yes to all these requirements, we can start.
 </p>
+
+<h2>How to read this tutorial?</h2>
+<p>This tutorial provides clear steps and commands which must be executed sequentially as it is listed. I strongly recommend not to skip any step, except <i>Workaround</i> step if all forward commands will no raise any errors.</p>
