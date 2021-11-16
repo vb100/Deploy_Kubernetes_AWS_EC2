@@ -23,5 +23,16 @@ If you say yes to all these requirements, we can start.
 ---
 <h3>Step 0. Prepare your SSH Private key for safe connections</h3>
 <p>First of all, put you SSH key to a special folder in your machine. Keep SSH key filnename be easy to type and recognize such as <i>kubernetes-dev.pem</i> (we will use this filename furthermore in this manual).</p>
+<p>Before all forwarding steps, you must to allow your <i>.pem</i> file be executable in your system. To do this, type and enter following command:</p>
+
+```
+chmod 400 kubernetes-dev.pem 
+```
+
+As a result you should see granted access to your <i>.pem</i> file - type <code>ls -la</code> command to see the effect:
+
+```commandline
+-r--------@    1 usename  staff   1700 Nov 16 07:14 kubernetes-dev.pem
+```
 
 </p>
