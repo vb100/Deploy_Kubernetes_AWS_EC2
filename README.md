@@ -17,7 +17,7 @@ If you say yes to all these requirements, we can start.
 <h2>How to read this tutorial?</h2>
 <p>This tutorial provides clear steps and commands which must be executed sequentially as it is listed. I strongly recommend not to skip any step, except <i>Workaround</i> step if all forward commands will no raise any errors.</p>
 
-<h2>Hands on set up your EC2 Instances</h2>
+<h2>Hands on set up your AWS EC2 Instances</h2>
 <p>In this part we will closely work on initialzied AWS EC2 instances. Keep in mind that in order to complete this part sucessfully, you should be opened all 3 terminal windows during all steps. Here 1 terminal window is dedicated to <b>Master slave</b>, while other two to <b>Worker nodes</b>. So in total we are having 3 nodes (1 + 2).<br>Noticing that this manual was prepared in Mac, so slightly differences may be using different OS, such as Windows.</p>
   
 ---
@@ -34,5 +34,10 @@ As a result you should see granted access to your <i>.pem</i> file - type <code>
 ```commandline
 -r--------@    1 usename  staff   1700 Nov 16 07:14 kubernetes-dev.pem
 ```
+This setting ensure safe connection to instances to execute next steps. 
+</p>
 
+<h3>Install dependencies and configure Kubernetes</h3>
+<p>
+In this part we will install Docker and Kubernetes packages into all 3 nodes, then enable them to work. In addition to that we will prepare Kubernetes tools such as <code>kubectl</code>, and <code>kubeadm</code> once they are mandatory for set up.
 </p>
