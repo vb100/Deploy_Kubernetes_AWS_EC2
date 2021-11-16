@@ -45,7 +45,7 @@ In this part we will install Docker and Kubernetes packages into all 3 nodes, th
 <p><b>Step 1.1. Install Docker</b><br>
 In order to install Docker package to your node, type and enter following commands:
 
-```
+```commandline
 # 1. Install Docker 
 # 1.1. Update the package list
 sudo apt-get update
