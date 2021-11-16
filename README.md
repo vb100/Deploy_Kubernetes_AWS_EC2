@@ -1,2 +1,3 @@
-# Deploy_Kubernetes_AWS_EC2
-This manual explain how to setup AWS EC2 instance and set-up a Kubernetes Cluster inside
+<h1>Set up Kubernetes on AWS EC2 Instance</h1>
+<p>Prepared by Vytautas Bielinskas, 2021.<b>
+Video of steps explained: <a href="https://www.youtube.com/c/VytautasBielinskas">Set up Kubernetes on AWS EC2 Instance</a></p>
