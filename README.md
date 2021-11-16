@@ -48,11 +48,11 @@ In order to install Docker package to your node, type and enter following comman
 
 ```commandline
 # 1. Install Docker 
-# 1.1. Update the package list
+# Update the package list
 sudo apt-get update
-# 1.2. Install Docker
+# Install Docker
 sudo apt-get install docker.io
-# 1.3. Check the installation and Docker version
+# Check the installation and Docker version
 docker --version
 ```
 </p>
@@ -61,12 +61,12 @@ docker --version
 Once you installed Docker in a previous step, you should to start and enable for a work it by type and enter following commands.
   
 ```commandline
-# 2. Start and Enable Docker
-# 2.1. Set Docker to launch at boot
+# 1.2. Start and Enable Docker
+# Set Docker to launch at boot
 sudo systemctl enable docker
-# 2.2. Verify that Docker is running now
+# Verify that Docker is running now
 sudo systemctl status docker
-# 2.3. If not running, try this:
+# If not running, try this:
 sudo systemctl start docker
 ```
   
