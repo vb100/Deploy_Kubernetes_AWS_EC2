@@ -127,4 +127,27 @@ You can set host names as you want, once there are no any strictly rules on that
   
   > <b>Important</b>: this step is optional as some instances raises error due to mismatches between installed drivers in the next steps. I recommend to apply this workaround to avoid such issues.
   
+  The main idea of this workaround is to create <i>daemon.json</i> file with specified content inside in <i>/etc/docker/</i> dircetory to avoid mismatches among drivers and make Kubernetes run healthly. You can do it with the following commands on all instances (nodes) terminals:
+  
+```commandline
+cd ../../etc/docker
+sudo touch daemon.json
+```
+  
+  Once you have created <i>daemon.json</i>, you must to fill this file with specified content inside as below. First of all, open this JSON file for editing with <code>vi</code> command:
+  
+```commandline
+sudo vi daemon.json 
+```
+  
+Once you are entered to editing space, type (or copy and paste) this conent:
+  
+```commandline
+{
+"exec-opts": ["native.cgroupdriver=systemd"]
+}  
+  
+Be sure that you pasted this content correctly, and exit with save the file with the hotkey <code>:wq</code>.
+```
+  
 </p>
