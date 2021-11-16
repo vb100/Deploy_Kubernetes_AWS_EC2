@@ -69,7 +69,7 @@ sudo systemctl start docker
 ```
 </p>
 
-<p><b>3. Install Kubernetes</b>
+<p><b>3. Install Kubernetes</b><br>
 To have our instances set up correctly, by side of Docker, we must to install a Kubernetes service. Kubernetes used to orchestrate Docker images, scale up and down based on real-time demand, and it also has number of benefits. Since you are downloading Kubernetes from a non-standard repository, it is essential to ensure that the software is authentic. So we need to add a singing key (with extenstion <code>gpg</code>).<br>
 To install Kubernetes type and enter the following command.
   
