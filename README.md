@@ -69,7 +69,7 @@ sudo systemctl start docker
 ```
 </p>
 
-<p><b>3. Install Kubernetes</b><br>
+<p><b>Step 3. Install Kubernetes</b><br>
 To have our instances set up correctly, by side of Docker, we must to install a Kubernetes service. Kubernetes used to orchestrate Docker images, scale up and down based on real-time demand, and it also has number of benefits. Since you are downloading Kubernetes from a non-standard repository, it is essential to ensure that the software is authentic. So we need to add a signing key (with extenstion <code>gpg</code>).<br>
 To install Kubernetes type and enter the following command.
   
@@ -82,4 +82,21 @@ Once you sucessfully added a signing key, you have to ass software repository wi
 ```commandline
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 ```
+</p>
+
+<p><b>Step 4. Prepare Kubernetes installations tools</b><br>
+  Here we will install <code>kubeadm</code>, <code>kubelet</code>, and <code>kubectl</code> tools. These tools are required for cluster initializing and managing. To install all these tools, type and enter following commands:
+  
+```commandline
+sudo apt-get install kubeadm kubelet kubectl
+sudo apt-mark hold kubeadm kubelet kubectl  
+```
+  
+When you are completed the previous command, be sure that the installations was sucessfull. To do it, verify the installation and check the version of installed <code>kubeadm</code> with the following command:
+  
+```commandline
+kubeadm version
+```
+If you done all previous steps correctly, no any erros should raises. You should see some version data and metadata related to your Kubenetes version.
+  
 </p>
