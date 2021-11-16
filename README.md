@@ -112,7 +112,7 @@ sudo swapoff -a
 No any message should apper after executing the previous command. If no an error on your side as well, keep going.
 </p>
 
-<p><b>Set a host name for each node</b><br>
+<p><b>Step 2. Set a host name for each node</b><br>
 Here we need to set meaningful host names for each of node. The purpose of this step is to easily recognize which node is Master, ans which ones are Worker nodes in our deployment processes. You should set host names to each instance separately:
   
 <ul>
