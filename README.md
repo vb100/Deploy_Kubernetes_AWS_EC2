@@ -120,5 +120,5 @@ Here we need to set meaningful host names for each of node. The purpose of this 
   <li>For <b>Worker</b> node 1: <code>sudo hostnamectl set-hostname worker-1</code></li>
   <li>For <b>Worker</b> node 2: <code>sudo hostnamectl set-hostname worker-2</code></li>
 </ul>
-You can set host names as you want, once there are no any strictly rules on that. Just keep in mind that the names should be meaningful, it will make you life easier later.
+You can set host names as you want, once there are no any strictly rules on that. Just keep in mind that the names should be meaningful, it will make you life easier for later.
 </p>
