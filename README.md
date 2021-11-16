@@ -122,3 +122,7 @@ Here we need to set meaningful host names for each of node. The purpose of this 
 </ul>
 You can set host names as you want, once there are no any strictly rules on that. Just keep in mind that the names should be meaningful, it will make you life easier for later.
 </p>
+
+<p><b>Step 3. Workaround: to avoid drivers mistmatches</b><br>
+  > <b>Important</b>: this step is optional as some instances raises error due to mismatches between installed drivers in the next steps. I recommend to apply this workaround to avoid such issues.
+</p>
