@@ -56,3 +56,18 @@ sudo apt-get install docker.io
 docker --version
 ```
 </p>
+
+<p><b>Step 1.2. Start and enable Docker</b><br>
+Once you installed Docker in a previous step, you should to start and enable for a work it by type and enter following commands.
+  
+```commandline
+# 2. Start and Enable Docker
+# 2.1. Set Docker to launch at boot
+sudo systemctl enable docker
+# 2.2. Verify that Docker is running now
+sudo systemctl status docker
+# 2.3. If not running, try this:
+sudo systemctl start docker
+```
+  
+</p>
