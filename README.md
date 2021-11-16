@@ -41,6 +41,7 @@ This setting ensure safe connection to instances to execute next steps.
 <p>
 In this part we will install Docker and Kubernetes packages into all 3 nodes, then enable them to work. In addition to that we will prepare Kubernetes tools such as <code>kubectl</code>, and <code>kubeadm</code> once they are mandatory for set up.
 </p>
+<p><b>Important:</b> Following steps must be executed in all your nodes, included Master and Worker nodes in paraller.</p>
 
 <p><b>Step 1.1. Install Docker</b><br>
 In order to install Docker package to your node, type and enter following commands:
