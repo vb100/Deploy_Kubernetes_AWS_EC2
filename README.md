@@ -125,7 +125,7 @@ You can set host names as you want, once there are no any strictly rules on that
 
 <p><b>Step 3. Workaround: to avoid drivers mistmatches</b><br>
   
-  > <b>Important</b>: this step is optional as some instances raises error due to mismatches between installed drivers in the next steps. I recommend to apply this workaround to avoid such issues.
+  > <b>Important</b>: this step is optional as some instances raises error due to mismatches between installed drivers in the next steps. I recommend to apply this workaround to avoid such issues. You must to implement this workaround in all your nodes.
   
   The main idea of this workaround is to create <i>daemon.json</i> file with specified content inside in <i>/etc/docker/</i> dircetory to avoid mismatches among drivers and make Kubernetes run healthly. You can do it with the following commands on all instances (nodes) terminals:
   
@@ -149,5 +149,15 @@ Once you are entered to editing space, type (or copy and paste) this conent:
 ```
   
 Be sure that you pasted this content correctly, and exit with save the file with the hotkey <code>:wq</code>.
+</p>
+
+<p>Now you need to restart your Docker service and <code>kubeadm</code> initialization in new conditions with the following commands:
+
+```commandline
+sudo systemctl restart docker
+sudo kubeadm reset
+```
   
+If no errors raised, you are ready to initialize your Kubernetes network on a Master node.
+
 </p>
