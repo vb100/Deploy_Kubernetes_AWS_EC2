@@ -98,5 +98,16 @@ When you are completed the previous command, be sure that the installations was 
 kubeadm version
 ```
 If you done all previous steps correctly, no any erros should raises. You should see some version data and metadata related to your Kubenetes version.
-  
+</p>
+
+<h3>Kubernetes Deployment</h3>
+<p>With this part we will begin the deployment process for freshly installed Kubernetes on our EC2 instances for all nodes. Keep executre following commands for all 3 nodes.</p>
+
+<p><b>Disable the swap memory from each node</b><br>
+Before initializing the internal Kubernetes network on our instances, you must the disable the swap memore from each node with the following command:
+
+```commandline
+sudo swapoff -a
+```
+No any message should apper after executing the previous command. If no an error on your side as well, keep going.
 </p>
