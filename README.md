@@ -145,9 +145,9 @@ Once you are entered to editing space, type (or copy and paste) this conent:
 ```commandline
 {
 "exec-opts": ["native.cgroupdriver=systemd"]
-}  
+} 
+```
   
 Be sure that you pasted this content correctly, and exit with save the file with the hotkey <code>:wq</code>.
-```
   
 </p>
