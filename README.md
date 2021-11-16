@@ -37,7 +37,21 @@ As a result you should see granted access to your <i>.pem</i> file - type <code>
 This setting ensure safe connection to instances to execute next steps. 
 </p>
 
-<h3>Install dependencies and configure Kubernetes</h3>
+<h3>Step 1. Install dependencies and configure Kubernetes</h3>
 <p>
 In this part we will install Docker and Kubernetes packages into all 3 nodes, then enable them to work. In addition to that we will prepare Kubernetes tools such as <code>kubectl</code>, and <code>kubeadm</code> once they are mandatory for set up.
+</p>
+
+<p><b>Step 1.1. Install Docker</b><br>
+In order to install Docker package to your node, type and enter following commands:
+
+```
+# 1. Install Docker 
+# 1.1. Update the package list
+sudo apt-get update
+# 1.2. Install Docker
+sudo apt-get install docker.io
+# 1.3. Check the installation and Docker version
+docker --version
+```
 </p>
