@@ -21,7 +21,12 @@ If you say yes to all these requirements, we can start.
 <p>This tutorial covers the following steps which you can execute on your side sequantially:
 <ul>
   <li><b>Step 1.</b> Set up AWS EC2 Ubuntu 18.04 Instance</li>
-  <li><b>Step 2.</b> Connect to EC2 Instance from local terminal</li>
+  <li><b>Step 2.</b> Connect to EC2 Instance from local terminal
+    <ul>
+      <li><b>2.1.</b> Make your private key (<i>.pem</i>) executable.</li>
+      <li><b>2.2.</b> Connect to all nodes from instances.</li>
+    </ul>
+  </li>
   <li><b>Step 3.</b> Install dependencies and configure Kubernetes</li>
   <li><b>Step 4.</b> Install Kubernets on Ubuntu 18.04</li>
   <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i></li>
