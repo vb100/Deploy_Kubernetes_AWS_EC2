@@ -36,6 +36,10 @@ If you say yes to all these requirements, we can start.
     </ul>  
   </li>
   <li><b>Step 4.</b> Install Kubernets on Ubuntu 18.04.</li>
+    <ul>
+      <li><b>4.1.</b> Add a Signing Key (<i>GPG</i>).</li>
+      <li><b>4.2.</b> Add the Kubernetes software repository.</li>
+    </ul>  
   <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
   <li><b>Step 6.</b> Kubernetes Deployment</li>
   <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers.</li>
