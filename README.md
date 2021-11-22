@@ -20,20 +20,27 @@ If you say yes to all these requirements, we can start.
 <h3>The structure of tutorial</h3>
 <p>This tutorial covers the following steps which you can execute on your side sequantially:
 <ul>
-  <li><b>Step 1.</b> Set up AWS EC2 Ubuntu 18.04 Instance</li>
-  <li><b>Step 2.</b> Connect to EC2 Instance from local terminal
+  <li><b>Step 1.</b> Set up AWS EC2 Ubuntu 18.04 Instance.</li>
+  <li><b>Step 2.</b> Connect to EC2 Instance from local terminal.
     <ul>
       <li><b>2.1.</b> Make your private key (<i>.pem</i>) executable.</li>
       <li><b>2.2.</b> Connect to all nodes from instances.</li>
     </ul>
   </li>
-  <li><b>Step 3.</b> Install dependencies and configure Kubernetes</li>
-  <li><b>Step 4.</b> Install Kubernets on Ubuntu 18.04</li>
-  <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i></li>
+  <li><b>Step 3.</b> Install dependencies and configure Kubernetes.
+    <ul>
+      <li><b>3.1.</b> Update the package list.</li>
+      <li><b>3.2.</b> Install Docker.</li>
+      <li><b>3.3.</b> Check Docker version.</li>
+      <li><b>3.4.</b> Start and enable Docker.</li>
+    </ul>  
+  </li>
+  <li><b>Step 4.</b> Install Kubernets on Ubuntu 18.04.</li>
+  <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
   <li><b>Step 6.</b> Kubernetes Deployment</li>
-  <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers</li>
-  <li><b>Step 8.</b> Initialize Kubernetes Pod Network</li>
-  <li><b>Step 9.</b> Check final stages/li>
+  <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers.</li>
+  <li><b>Step 8.</b> Initialize Kubernetes Pod Network.</li>
+  <li><b>Step 9.</b> Check final stages.</li>
 </ul>
 </p>
 
