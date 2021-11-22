@@ -17,6 +17,21 @@ If you say yes to all these requirements, we can start.
 <h2>How to read this tutorial?</h2>
 <p>This tutorial provides clear steps and commands which must be executed sequentially as it is listed. I strongly recommend not to skip any step, except <i>Workaround</i> step if all forward commands will no raise any errors.</p>
 
+<h3>The structure of tutorial</h3>
+<p>This tutorial covers the following steps which you can execute on your side sequantially:
+<ul>
+  <li><b>Step 1.</b> Set up AWS EC2 Ubuntu 18.04 Instance</li>
+  <li><b>Step 2.</b> Connect to EC2 Instance from local terminal</li>
+  <li><b>Step 3.</b> Install dependencies and configure Kubernetes</li>
+  <li><b>Step 4.</b></li>
+  <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i></li>
+  <li><b>Step 6.</b> Kubernetes Deployment</li>
+  <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers</li>
+  <li><b>Step 8.</b> Initialize Kubernetes Pod Network</li>
+  <li><b>Step 9.</b> Check final stages/li>
+</ul>
+</p>
+
 <h2>Hands on set up your AWS EC2 Instances</h2>
 <p>In this part we will closely work on initialzied AWS EC2 instances. Keep in mind that in order to complete this part sucessfully, you should be opened all 3 terminal windows during all steps. Here 1 terminal window is dedicated to <b>Master slave</b>, while other two to <b>Worker nodes</b>. So in total we are having 3 nodes (1 + 2).<br>Noticing that this manual was prepared in Mac, so slightly differences may be using different OS, such as Windows.</p>
   
