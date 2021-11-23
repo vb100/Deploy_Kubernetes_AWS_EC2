@@ -183,8 +183,10 @@ sudo apt-mark hold kubeadm kubelet kubectl
 ```
 
 <p>As the output, you should see three lines of text indicating that these tools are on hold now. If yes, go to the next step.</p>
+
+<h3>5.3. Check <i>kubeadm</i> version</h3>
   
-When you are completed the previous command, be sure that the installations was sucessfull. To do it, verify the installation and check the version of installed <code>kubeadm</code> with the following command:
+<p>When you are completed the previous step, be sure that the installations was sucessfull. To do it, verify the installation and check the version of installed <code>kubeadm</code> with the following command: </p>
   
 ```commandline
 kubeadm version
@@ -192,7 +194,7 @@ kubeadm version
 If you done all previous steps correctly, no any erros should raises. You should see some version data and metadata related to your Kubenetes version.
 </p>
 
-<h3>Kubernetes Deployment</h3>
+<h2>Step 6. Kubernetes Deployment</h2>
 <p>With this part we will begin the deployment process for freshly installed Kubernetes on our EC2 instances for all nodes. Keep executre following commands for all 3 nodes.</p>
 
 <p><b>Step 1. Disable the swap memory from each node</b><br>
