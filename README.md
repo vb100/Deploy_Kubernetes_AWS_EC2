@@ -361,7 +361,8 @@ sudo kubectl get nodes
 <h2>Video of this tutorial is available - ALL STEPS EXPLAINED!</h2>
 <p>If you prefer video format of learning instead of reading Readme tutorials, or wish to combine boths, here you go, enjoy this carefully prepared video on Youtube!
 
+	<p>
 <a href="https://youtu.be/SQJxYhfzznU">
   <img src="cover_kubernetes_mini.png" alt="Setup Kubernetes on Ubuntu 18.04 - video tutoriall">
-</a>
+</a></p>
 </p>
