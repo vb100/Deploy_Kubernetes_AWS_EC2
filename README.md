@@ -59,7 +59,12 @@ If you say yes to all these requirements, we can start.
        <li><b>7.2.</b> Reset Docker and <i>kubeadm</i> services.</li>
     </ul>   
   </li>
-  <li><b>Step 8.</b> Initialize Kubernetes Pod Network.</li>
+  <li><b>Step 8.</b> Initialize Kubernetes Pod Network.
+    <ul>
+      <li>Set up a Pod Network for Master node</li>
+      <li>Create a directory for the initialized Master node</li>
+    </ul>  
+  </li>
   <li><b>Step 9.</b> Check final stages.</li>
 </ul>
 </p>
