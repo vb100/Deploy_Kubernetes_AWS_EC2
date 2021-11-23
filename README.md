@@ -299,4 +299,20 @@ kubeadm join 172.31.37.224:6443 --token 2jcb53.krt1i08yljnnkyqb \
 
 <p>This outputs provides you a lot of guidelines what to do further. Keep <code>join</code> token very carefully, we will use it to join Worker nodes to the Master node.</p>
 
-<h3>Make clusters with Master and Worker nodes</h3>
+<h3>8.2. Create a directory for the initialized Master node</h3>
+
+<p>As the generated output to the <i>init</i> command suggest, first of all after this, we need to create a special directory in the Master node, just copying and pasting lines from the output, as follows:</p>
+
+```commandline
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+<p>If no any errors raised, you sucessfully created a required directory for the Cluster.</p>
+
+<h3>Set up a virtual network for comunication across nodes (<i>flannel</i>)</h3>
+
+<p>As <a href = "https://kubernetes.io/docs/concepts/cluster-administration/networking/">official Kubernetes docummentation</a> says, Flannel is a very simple overlay network that satisfies the Kubernetes requirements. Many people have reported success with Flannel and Kubernetes. In other words, Flannel is a simple and easy way to configure a layer 3 network fabric designed for Kubernetes.
+
+</p>
