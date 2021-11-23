@@ -41,7 +41,12 @@ If you say yes to all these requirements, we can start.
       <li><b>4.2.</b> Add the Kubernetes software repository.</li>
     </ul>
   </li>
-  <li><b>Step 5.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
+  <li><b>Step 5.</b> Prepare Kubernetes installation tools</i>.
+    <ul>
+      <li><b>5.1.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl.</li>
+      <li><b>5.2.</b> Check if <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i> are on hold.</li>
+    </ul>  
+  </li>
   <li><b>Step 6.</b> Kubernetes Deployment</li>
   <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers.</li>
   <li><b>Step 8.</b> Initialize Kubernetes Pod Network.</li>
