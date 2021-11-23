@@ -17,7 +17,7 @@ If you say yes to all these requirements, we can start.
 <h2>How to read this tutorial?</h2>
 <p>This tutorial provides clear steps and commands which must be executed sequentially as it is listed. I strongly recommend not to skip any step, except <i>Workaround</i> step if all forward commands will no raise any errors. Video version of the tutorial is available <a href="https://youtu.be/SQJxYhfzznU">here</a>.</p>
 
-<h3>The structure of tutorial</h3>
+<h3>The structure of the tutorial</h3>
 <p>This tutorial covers the following steps which you can execute on your side sequantially:
 <ul>
   <li><b>Step 1.</b> Set up AWS EC2 Ubuntu 18.04 Instance.</li>
