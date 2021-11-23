@@ -311,8 +311,15 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 <p>If no any errors raised, you sucessfully created a required directory for the Cluster.</p>
 
-<h3>Set up a virtual network for comunication across nodes (<i>flannel</i>)</h3>
+<h3>8.3. Set up a virtual network for comunication across nodes (<i>flannel</i>)</h3>
 
 <p>As <a href = "https://kubernetes.io/docs/concepts/cluster-administration/networking/">official Kubernetes docummentation</a> says, Flannel is a very simple overlay network that satisfies the Kubernetes requirements. Many people have reported success with Flannel and Kubernetes. In other words, Flannel is a simple and easy way to configure a layer 3 network fabric designed for Kubernetes.
-
 </p>
+
+<p>You can initialize a new <i>flannel</i> network for you Kubernetes Cluster with this command:</p>
+
+```commandline
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+```
+
+<p>The loaded <i>kube-flannel.yml</i> file contain all instructions to install this network on you Cluster.</p>
