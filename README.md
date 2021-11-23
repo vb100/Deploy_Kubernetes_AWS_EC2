@@ -69,7 +69,7 @@ If you say yes to all these requirements, we can start.
     </ul>  
   </li>
   <li><b>Step 9.</b> Check final stages.
-    <u>
+    <ul>
       <li><b>9.1</b> Confirm that Master node communicates with all Worker nodes.</li>
     </u>
   </li>
