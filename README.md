@@ -146,7 +146,7 @@ sudo systemctl start docker
 ```
 </p>
 
-<p><b>Step 4. Install Kubernetes on Ubuntu 18.04</b>
+<h2>Step 4. Install Kubernetes on Ubuntu 18.04</h2>
 <p>
 To have our instances set up correctly, by side of Docker, we must to install a Kubernetes service. Kubernetes used to orchestrate Docker images, scale up and down based on real-time demand, and it also has number of benefits. </p>
 
