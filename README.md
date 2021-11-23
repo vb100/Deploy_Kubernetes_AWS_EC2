@@ -112,19 +112,28 @@ In this part we will install Docker and Kubernetes packages into all 3 nodes, th
 <p><b><u>Important:</b> Following steps must be executed in all your nodes, included Master and Worker nodes in paraller.</u></p>
 
 <h3>3.1. Update the package list</h3>
-In order to install Docker package to your node, type and enter following commands:
+<p>You can update the package list in you Ubuntu instance with the following command:</p>
 
 ```commandline
-# Update the package list
 sudo apt-get update
-# Install Docker
+```
+
+<h3>3.2. Install Docker</h3>
+<p>To install Docker on your Ubuntu instance (all nodes) you should use the following command:</p>
+
+```
 sudo apt-get install docker.io
-# Check the installation and Docker version
+```
+
+<h3>3.3. Check Docker version</h3>
+<p>Once you install Docker on your nodes, you can easily check the version of just installed Docker to be sure that is installed sucessfully with following command:</p>
+
+```
 docker --version
 ```
 </p>
 
-<p><b>Step 2. Start and enable Docker</b><br>
+<h3>3.4. Start and enable Docker</h3>
 Once you installed Docker in a previous step, you should to start and enable for a work it by type and enter following commands.
   
 ```commandline
