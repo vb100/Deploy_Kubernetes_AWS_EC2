@@ -197,7 +197,7 @@ If you done all previous steps correctly, no any erros should raises. You should
 <h2>Step 6. Kubernetes Deployment</h2>
 <p>With this part we will start the deployment process for freshly installed Kubernetes on our EC2 instances for all nodes. Keep executre following commands for all 3 nodes.</p>
 
-<h3>6.1.Disable the swap memory from each node<h3>
+<h3>6.1.Disable the swap memory from each node</h3>
 <p>Swap is hard disk space used as RAM. It is (relatively speaking) very slow, but stops computers from crashing when they are trying to deal with more data then their RAM can handle. Before initializing the internal Kubernetes network on our instances, you must the disable the swap memory from each node with the following command:</p>
 
 ```commandline
