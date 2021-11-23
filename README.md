@@ -105,7 +105,7 @@ ssh -i kubernetes-dev.pem ubuntu@18.117.218.51
 This setting ensure safe connection to instances to execute next steps. 
 </p>
 
-<h2>Step 3. Install dependencies and configure Kubernetes</h2>
+<h2>Step 3. Install dependencies and configure Kubernetes</h3>
 <p>
 In this part we will install Docker and Kubernetes packages into all 3 nodes, then enable them to work. In addition to that we will prepare Kubernetes tools such as <code>kubectl</code>, and <code>kubeadm</code> once they are mandatory for set up.
 </p>
