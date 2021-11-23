@@ -345,4 +345,12 @@ kubeadm join 172.31.37.224:6443 --token 2jcb53.krt1i08yljnnkyqb --discovery-toke
 
 <p>So run it! As a result, you should get a output indicating that your Worker nodes are now connected to your Master node.</p>
 
-<code></code>
+<h2>Step 9. Check final stages</h2>
+
+<p>If you are in this step, I assume you sucessfully completed all previous steps. To be sure that everything is fine, let's check the final status of our Cluster with this command:</p>
+
+```commandline
+sudo kubectl get nodes
+```
+
+<p>The output to this should be list of the nodes, indicating that they (<i>Master node</i>, <i>Worker-1</i>, and <i>Worker-2</i> are running, or they are <i>running</i>, including <i>VERSION</i> and <i>AGE</i> If you see that, gongratulation with finishing this big tutorial!</p>
