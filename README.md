@@ -271,7 +271,30 @@ This step is quite large comparing with the rest steps, so be ready to make foll
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
   
-The execution of this command can take approximatelly 2-3 minutes. At the end, you should get a quite large output with <code>join</code> command at the very end (we will use it in the next step to connect Worker nodes to Master node), and some basic commands in the beginning of output message. I strongly recommend to copy the whole output message for further use.
+The execution of this command can take approximatelly 2-3 minutes. At the end, you should get a quite large output with <code>join</code> command at the very end (we will use it in the next step to connect Worker nodes to Master node), and some basic commands in the beginning of output message. I strongly recommend to copy the whole output message for further use. The example of the output for the executed command is below:
 </p>
+
+```commandline
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 172.31.37.224:6443 --token 2jcb53.krt1i08yljnnkyqb \
+	--discovery-token-ca-cert-hash sha256:c6ef8a3b52fa8cc22f8933f502b61ce56b0ec135af9c5d1b503c8d1876a1a961 
+```
 
 <h3>Make clusters with Master and Worker nodes</h3>
