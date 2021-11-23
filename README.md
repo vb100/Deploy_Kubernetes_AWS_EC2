@@ -265,7 +265,7 @@ This step is quite large comparing with the rest steps, so be ready to make foll
 
 <h3>8.1. Set up a Pod Network for Master node</h3>
 
-<p>You can initialize your Kubernetes Pod Network on your Master node with the following command:</p>
+<p>I think this step is the most important one, and asnwer to the question - <i>are all steps we made before were correct</i>?. So, you can initialize your Kubernetes Pod Network on your Master node with the following command:</p>
   
 ```commandline
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
