@@ -95,7 +95,7 @@ As a result you should see granted access to your <i>.pem</i> file - type <code>
 
 <p><b>Important:</b> Replace example <i>Public IP</i> with your in your command. Please make connections to all <b>3</b> nodes by changing the <i>Public IP</i> respectively.</p>
 
-<h3>1.2. Connect to your Ubuntu instance from terminal</h3>
+<h2>2. Connect to your Ubuntu instance from terminal</h3>
 <p>Once you made your private key (<i>.pem</i>) executable, you are ready to use it to make connection to your Ubuntu instance from your terminal. You can do it with the following command:</p>
 
 ```
@@ -105,13 +105,13 @@ ssh -i kubernetes-dev.pem ubuntu@18.117.218.51
 This setting ensure safe connection to instances to execute next steps. 
 </p>
 
-<h3>Install dependencies and configure Kubernetes</h3>
+<h2>Step 3. Install dependencies and configure Kubernetes</h2>
 <p>
 In this part we will install Docker and Kubernetes packages into all 3 nodes, then enable them to work. In addition to that we will prepare Kubernetes tools such as <code>kubectl</code>, and <code>kubeadm</code> once they are mandatory for set up.
 </p>
 <p><b><u>Important:</b> Following steps must be executed in all your nodes, included Master and Worker nodes in paraller.</u></p>
 
-<p><b>Step 1. Install Docker</b><br>
+<h3>3.1. Update the package list<h3>
 In order to install Docker package to your node, type and enter following commands:
 
 ```commandline
