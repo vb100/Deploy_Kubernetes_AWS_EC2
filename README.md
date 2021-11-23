@@ -61,11 +61,18 @@ If you say yes to all these requirements, we can start.
   </li>
   <li><b>Step 8.</b> Initialize Kubernetes Pod Network.
     <ul>
-      <li>Set up a Pod Network for Master node</li>
-      <li>Create a directory for the initialized Master node</li>
+      <li><b>8.1</b> Set up a Pod Network for Master node.</li>
+      <li><b>8.2</b> Create a directory for the initialized Master node.</li>
+      <li><b>8.3</b> Set up a virtual network for communication across nodes (<i>flannel</i>).</li>
+      <li><b>8.4</b> Check the pods status</li>
+      <li><b>8.5.</b> Join Worker nodes to a Master node</li>
     </ul>  
   </li>
-  <li><b>Step 9.</b> Check final stages.</li>
+  <li><b>Step 9.</b> Check final stages.
+    <u>
+      <li><b>9.1</b> Confirm that Master node communicates with all Worker nodes.</li>
+    </u>
+  </li>
 </ul>
 </p>
 
