@@ -111,7 +111,7 @@ In this part we will install Docker and Kubernetes packages into all 3 nodes, th
 </p>
 <p><b><u>Important:</b> Following steps must be executed in all your nodes, included Master and Worker nodes in paraller.</u></p>
 
-<h3>3.1. Update the package list<h3>
+<h3>3.1. Update the package list</h3>
 In order to install Docker package to your node, type and enter following commands:
 
 ```commandline
