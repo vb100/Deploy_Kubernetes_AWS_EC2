@@ -53,7 +53,12 @@ If you say yes to all these requirements, we can start.
       <li><b>6.2.</b> Set host names for each node.</li>
     </ul> 
   </li>
-  <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers.</li>
+  <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers (<i>optional step</i>).
+     <ul>
+       <li><b>7.1.</b> Create a <i>daemon.json</i> file.</li>
+       <li><b>7.2.</b> Reset Docker and <i>kubeadm</i> services.</li>
+    </ul>   
+  </li>
   <li><b>Step 8.</b> Initialize Kubernetes Pod Network.</li>
   <li><b>Step 9.</b> Check final stages.</li>
 </ul>
