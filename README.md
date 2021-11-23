@@ -43,11 +43,16 @@ If you say yes to all these requirements, we can start.
   </li>
   <li><b>Step 5.</b> Prepare Kubernetes installation tools.
     <ul>
-  <li><b>5.1.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
+      <li><b>5.1.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
       <li><b>5.2.</b> Check if <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i> are on hold.</li>
     </ul>  
   </li>
-  <li><b>Step 6.</b> Kubernetes Deployment</li>
+  <li><b>Step 6.</b> Kubernetes Deployment.
+     <ul>
+      <li><b>6.1.</b> Disable the swap memory from nodes.</li>
+      <li><b>6.2.</b> Set host names for each node.</li>
+    </ul> 
+  </li>
   <li><b>Step 7.</b> Workaround to avoid mismatches between Docker drivers.</li>
   <li><b>Step 8.</b> Initialize Kubernetes Pod Network.</li>
   <li><b>Step 9.</b> Check final stages.</li>
