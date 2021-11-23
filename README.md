@@ -195,18 +195,18 @@ If you done all previous steps correctly, no any erros should raises. You should
 </p>
 
 <h2>Step 6. Kubernetes Deployment</h2>
-<p>With this part we will begin the deployment process for freshly installed Kubernetes on our EC2 instances for all nodes. Keep executre following commands for all 3 nodes.</p>
+<p>With this part we will start the deployment process for freshly installed Kubernetes on our EC2 instances for all nodes. Keep executre following commands for all 3 nodes.</p>
 
-<p><b>Step 1. Disable the swap memory from each node</b><br>
-Before initializing the internal Kubernetes network on our instances, you must the disable the swap memore from each node with the following command:
+<h3>6.1.Disable the swap memory from each node<h3>
+<p>Swap is hard disk space used as RAM. It is (relatively speaking) very slow, but stops computers from crashing when they are trying to deal with more data then their RAM can handle. Before initializing the internal Kubernetes network on our instances, you must the disable the swap memory from each node with the following command:</p>
 
 ```commandline
 sudo swapoff -a
 ```
-No any message should apper after executing the previous command. If no an error on your side as well, keep going.
+If no any error occurs on your side, keep going.
 </p>
 
-<p><b>Step 2. Set a host name for each node</b><br>
+  <h3>6.2. Set a host name for each node</h3>
 Here we need to set meaningful host names for each of node. The purpose of this step is to easily recognize which node is Master, ans which ones are Worker nodes in our deployment processes. You should set host names to each instance separately:
   
 <ul>
