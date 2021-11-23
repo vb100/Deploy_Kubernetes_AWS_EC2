@@ -41,9 +41,9 @@ If you say yes to all these requirements, we can start.
       <li><b>4.2.</b> Add the Kubernetes software repository.</li>
     </ul>
   </li>
-  <li><b>Step 5.</b> Prepare Kubernetes installation tools</i>.
+  <li><b>Step 5.</b> Prepare Kubernetes installation tools.
     <ul>
-      <li><b>5.1.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl.</li>
+  <li><b>5.1.</b> Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i>.</li>
       <li><b>5.2.</b> Check if <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i> are on hold.</li>
     </ul>  
   </li>
