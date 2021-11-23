@@ -173,8 +173,16 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
   
 ```commandline
 sudo apt-get install kubeadm kubelet kubectl
+```
+
+<h3>5.2. Check if <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i> are on hold</h3>
+<p>Once we have installed <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i> tools, now we need to be sure that these tools are active. In other words saying, we need to check if they are on hold. We can do it with the following command:</p>
+
+```commandline
 sudo apt-mark hold kubeadm kubelet kubectl  
 ```
+
+<p>As the output, you should see three lines of text indicating that these tools are on hold now. If yes, go to the next step.</p>
   
 When you are completed the previous command, be sure that the installations was sucessfull. To do it, verify the installation and check the version of installed <code>kubeadm</code> with the following command:
   
