@@ -146,23 +146,27 @@ sudo systemctl start docker
 ```
 </p>
 
-<p><b>Step 3. Install Kubernetes</b><br>
-To have our instances set up correctly, by side of Docker, we must to install a Kubernetes service. Kubernetes used to orchestrate Docker images, scale up and down based on real-time demand, and it also has number of benefits. Since you are downloading Kubernetes from a non-standard repository, it is essential to ensure that the software is authentic. So we need to add a signing key (with extenstion <code>gpg</code>).<br>
-To install Kubernetes type and enter the following command.
+<p><b>Step 4. Install Kubernetes on Ubuntu 18.04</b>
+<p>
+To have our instances set up correctly, by side of Docker, we must to install a Kubernetes service. Kubernetes used to orchestrate Docker images, scale up and down based on real-time demand, and it also has number of benefits. </p>
+
+<h3>4.1. Add a Signing Key (GPG)</h3>
+<p>Since you are downloading Kubernetes from a non-standard repository, it is essential to ensure that the software is authentic. So we need to add a signing key (with extenstion <code>gpg</code>).<br>
+To add a GPG key, type and enter following coomand:</p>
   
 ```commandline
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 ```
-  
-Once you sucessfully added a signing key, you have to ass software repository with the following command:
+
+<h3>4.2. Add the Kubernetes software repository</h3>
+<p>Once you sucessfully added a signing key, you have to add software repository with the following command:</p>
   
 ```commandline
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 ```
-</p>
 
-<p><b>Step 4. Prepare Kubernetes installations tools</b><br>
-  Here we will install <code>kubeadm</code>, <code>kubelet</code>, and <code>kubectl</code> tools. These tools are required for cluster initializing and managing. To install all these tools, type and enter following commands:
+<h3>Step 5. Prepare Kubernetes installations tools<h3>
+<p>Here we will install <code>kubeadm</code>, <code>kubelet</code>, and <code>kubectl</code> tools. These tools are required for cluster initializing and managing. To install all these tools, type and enter following commands:</p>
   
 ```commandline
 sudo apt-get install kubeadm kubelet kubectl
