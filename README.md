@@ -354,3 +354,11 @@ sudo kubectl get nodes
 ```
 
 <p>The output to this should be list of the nodes, indicating that they (<i>Master node</i>, <i>Worker-1</i>, and <i>Worker-2</i> are running, or they are <i>running</i>, including <i>VERSION</i> and <i>AGE</i> If you see that, gongratulation with finishing this big tutorial!</p>
+
+
+---
+
+<h2>Video of this tutorial is available - ALL STEPS EXPLAINED!</h2>
+<p>If you prefer video format of learning instead of reading Readme tutorials, or wish to combine boths, here you go, enjoy this carefully prepared video on Youtube!
+
+</p>
