@@ -335,3 +335,14 @@ kubectl get pods --all-namespaces
 
 <p>On the generated output you should see that all your pods on you Master node are running.</p>
 
+<h3>8.5. Join Worker nodes to a Master node</h3>
+<p>This is the (almost) last step in this tutorial. So, as the <code>init</code> output suggest, we also need to connect our two (or more) Worker nodes to a Master node in a correct way, with generated <code>join</code> token. This is the last line in the mentioned output, starting with <code>kubeadm join 172.31.37...</code>.</p>
+<p>I recommend to delete <code>\</code> from the command and by doing this to make a single line instead of two lines. As a result to this, you should see similar command structure as this:</p>
+
+```commandline
+kubeadm join 172.31.37.224:6443 --token 2jcb53.krt1i08yljnnkyqb --discovery-token-ca-cert-hash sha256:c6ef8a3b52fa8cc22f8933f502b61ce56b0ec135af9c5d1b503c8d1876a1a961 
+```
+
+<p>So run it! As a result, you should get a output indicating that your Worker nodes are now connected to your Master node.</p>
+
+<code></code>
