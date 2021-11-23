@@ -260,8 +260,12 @@ sudo kubeadm reset
 If no errors raised, you are ready to initialize your Kubernetes network on a Master node.
 </p>
 
-<p><b>Step 4. Initialize Kubernetes Pod Network</b><br>
-This step must be performed in Master node only. With this step you will create Pod network in your Master node, which is required for Cluster communicating with its nodes. You can initialize your Kubernetes Pod Network on your Master node with the following command:
+<h2>Step 8. Initialize Kubernetes Pod Network</h2>
+This step is quite large comparing with the rest steps, so be ready to make following steps carefully without interpution. This step must be performed in Master node only. With this step you will create Pod network in your Master node, which is required for Cluster communicating with its nodes. 
+
+<h3>8.1. Set up a Pod Network for Master node</h3>
+
+<p>You can initialize your Kubernetes Pod Network on your Master node with the following command:</p>
   
 ```commandline
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
