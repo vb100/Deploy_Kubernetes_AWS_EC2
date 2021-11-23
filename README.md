@@ -297,4 +297,6 @@ kubeadm join 172.31.37.224:6443 --token 2jcb53.krt1i08yljnnkyqb \
 	--discovery-token-ca-cert-hash sha256:c6ef8a3b52fa8cc22f8933f502b61ce56b0ec135af9c5d1b503c8d1876a1a961 
 ```
 
+<p>This outputs provides you a lot of guidelines what to do further. Keep <code>join</code> token very carefully, we will use it to join Worker nodes to the Master node.</p>
+
 <h3>Make clusters with Master and Worker nodes</h3>
