@@ -84,23 +84,24 @@ If you say yes to all these requirements, we can start.
 <p>Before all forwarding steps, you must to allow your <i>.pem</i> file be executable in your system. To do this, type and enter following command:</p>
 
 ```
-ssh -i kubernetes-dev.pem ubuntu@18.117.218.51
-```
-<p><b>Important:</b> Replace example <i>Public IP</i> with your in your command. Please make connections to all <b>3</b> nodes by changing the <i>Public IP</i> respectively.</p>
-
-<h3>1.2. Connect to your Ubuntu instance from terminal</h3>
-<p>Once you made your private key (<i>.pem</i>) executable, you are ready to use it to make connection to your Ubuntu instance from your terminal. You can do it with the following command:</p>
-
-```
 chmod 400 kubernetes-dev.pem 
 ```
-
 
 As a result you should see granted access to your <i>.pem</i> file - type <code>ls -la</code> command to see the effect:
 
 ```commandline
 -r--------@    1 usename  staff   1700 Nov 16 07:14 kubernetes-dev.pem
 ```
+
+<p><b>Important:</b> Replace example <i>Public IP</i> with your in your command. Please make connections to all <b>3</b> nodes by changing the <i>Public IP</i> respectively.</p>
+
+<h3>1.2. Connect to your Ubuntu instance from terminal</h3>
+<p>Once you made your private key (<i>.pem</i>) executable, you are ready to use it to make connection to your Ubuntu instance from your terminal. You can do it with the following command:</p>
+
+```
+ssh -i kubernetes-dev.pem ubuntu@18.117.218.51
+```
+
 This setting ensure safe connection to instances to execute next steps. 
 </p>
 
