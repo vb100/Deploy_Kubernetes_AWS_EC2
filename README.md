@@ -1,4 +1,4 @@
-<h1>Set up Kubernetes on AWS EC2 Instance</h1>
+<h1>Set up Kubernetes on AWS EC2 Ubuntu 18.04 Instance</h1>
 <p>Prepared by Vytautas Bielinskas, 2021.<br>
 Video of steps explained: <a href="https://www.youtube.com/c/VytautasBielinskas">Set up Kubernetes on AWS EC2 Instance</a><br>LinkedIn profile: <a href="https://www.linkedin.com/in/bielinskas/">here</a></p>
 
@@ -323,3 +323,15 @@ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Do
 ```
 
 <p>The loaded <i>kube-flannel.yml</i> file contain all instructions to install this network on you Cluster.</p>
+
+<h3>8.4. Check the pods status</h3>
+<p>A pod is the smallest execution unit in Kubernetes. A pod encapsulates one or more applications. Pods are ephemeral by nature, if a pod (or the node it executes on) fails, Kubernetes can automatically create a new replica of that pod to continue operations. Pods include one or more containers (such as Docker containers) (<a href="https://www.vmware.com/topics/glossary/content/kubernetes-pods">source</a>).</p>
+
+<p>Once you sucessfully initialized a new <i>flannel</i> network on your Kubernetes Cluster, it is a good time to check pods status. You can do it with the following command:</p>
+
+```commandline
+kubectl get pods --all-namespaces
+```
+
+<p>On the generated output you should see that all your pods on you Master node are running.</p>
+
