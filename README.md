@@ -168,7 +168,7 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 <h2>Step 5. Prepare Kubernetes installations tools</h2>
 <p>With this step we will prepare the required Kubernetes tools to start and complete configuration of nodes.</p>
 
-<h3>Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i></h3>
+<h3>5.1. Install <i>kubeadm</i>, <i>kubelet</i>, and <i>kubectl</i></h3>
 <p>Here we will install <code>kubeadm</code>, <code>kubelet</code>, and <code>kubectl</code> tools. These tools are required for cluster initializing and managing. To install all these tools, type and enter following commands:</p>
   
 ```commandline
