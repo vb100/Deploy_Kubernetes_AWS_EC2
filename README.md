@@ -221,7 +221,11 @@ You can set host names as you want, once there are no any strictly rules on that
   
   > <b>Important</b>: this step is optional as some instances raises error due to mismatches between installed drivers in the next steps. I recommend to apply this workaround to avoid such issues. You must to implement this workaround in all your nodes.
   
-  The main idea of this workaround is to create <i>daemon.json</i> file with specified content inside in <i>/etc/docker/</i> dircetory to avoid mismatches among drivers and make Kubernetes run healthly. You can do it with the following commands on all instances (nodes) terminals:
+<p>The main idea of this workaround step is to create <i>daemon.json</i> file with specified content inside in <i>/etc/docker/</i> dircetory to avoid mismatches among drivers and make Kubernetes run healthly. In this step, you should be at least familiar with some Linux commands, such as <code>vi</code>, and <code>touch</code>.</p>
+
+<h3>7.1. Create a <i>daemon.json</i>file</h3>
+
+<p>Firstly you need to navigate to <i>/etc/docker/</i> folder from you current location in the server. Then you should create a new JSON file with the command <code>touch</code> as follows.</p>
   
 ```commandline
 cd ../../etc/docker
@@ -245,6 +249,7 @@ Once you are entered to editing space, type (or copy and paste) this conent:
 Be sure that you pasted this content correctly, and exit with save the file with the hotkey <code>:wq</code>.
 </p>
 
+<h3>7.2. Reset Docker and <i>kubeadm</i> services</h3>
 <p>Now you need to restart your Docker service and <code>kubeadm</code> initialization in new conditions with the following commands:
 
 ```commandline
